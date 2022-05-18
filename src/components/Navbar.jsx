@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="fixed w-screen bg-white drop-shadow-md">
+    <header className="fixed w-screen bg-white drop-shadow-md z-50">
       <nav className="md:flex md:items-center">
         <div className="md:block flex items-center m-5">
           <p className="p-2.5 md:p-3">Navigasi</p>
