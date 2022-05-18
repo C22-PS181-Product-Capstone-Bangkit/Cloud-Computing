@@ -24,7 +24,7 @@ function Features() {
   return (
     <>
       <h1 className="text-center font-bold text-5xl mb-8">Fitur</h1>
-      <div className="grid md:grid-cols-3 md:grid-rows-2 grid-cols-1">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-2 grid-cols-1">
         <section
           onClick={() => swiper.slideTo(2)}
           className={` p-8 my-3 mx-4 rounded-xl shadow-md ${
@@ -52,7 +52,7 @@ function Features() {
           </p>
         </section>
         <div
-          className="md:row-span-2 md:mb-36 h-96 mb-40 mt-5"
+          className="md:row-span-2 md:col-span-2 lg:col-span-1 md:mb-36 h-96 mb-40 mt-5"
           // style={{
           //   backgroundImage: `url(${Phone})`,
           //   backgroundRepeat: "no-repeat",
@@ -101,7 +101,7 @@ function Features() {
         </div>
         <section
           onClick={() => swiper.slideTo(3)}
-          className={`row-start-2 p-8 my-3 mx-4 rounded-xl shadow-md ${
+          className={`lg:row-start-2 lg:col-start-1 md:col-start-2 md:row-start-1 row-start-2 p-8 my-3 mx-4 rounded-xl shadow-md ${
             count === 3
               ? "bg-gradient-to-r from-white to-cyan-50"
               : "background-white "
