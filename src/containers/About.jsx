@@ -26,7 +26,7 @@ const value = [
 
 function About() {
   return (
-    <div id="about" className="lg:mx-16 md:mx-12">
+    <div id="about" className="lg:mx-16 md:mx-12 mx-4">
       <article>
         <h1 className="text-center font-bold text-5xl pt-28 mb-16">Tentang</h1>
         <p className="text-center font-semibold text-lg">
@@ -35,7 +35,7 @@ function About() {
         </p>
       </article>
       <div className="max-w-4xl mx-auto">
-        <section className="flex flex-wrap justify-center my-16">
+        <section className="flex flex-wrap justify-center my-8">
           {value.map((arr, index) => (
             <>
               <article className="flex w-64 mx-5 my-8 flex-col text-center">

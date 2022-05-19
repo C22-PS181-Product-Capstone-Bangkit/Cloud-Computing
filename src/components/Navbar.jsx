@@ -20,9 +20,7 @@ const Navbar = () => {
                 type="button"
                 className="hover:text-cyan-410"
                 onClick={() =>
-                  document
-                    .getElementById("home")
-                    .scrollIntoView({ behavior: "smooth" })
+                  window.scrollTo({ top: 0, behavior: "smooth" })
                 }
               >
                 <p className="md:p-3 md:mx-1 md:ml-0 md:mb-0 font-semibold py-2 pl-2 ml-5 mb-4">
