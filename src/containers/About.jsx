@@ -26,9 +26,9 @@ const value = [
 
 function About() {
   return (
-    <div id="about" className="lg:mx-16 md:mx-12 mb-16">
+    <div id="about" className="lg:mx-16 md:mx-12">
       <article>
-        <h1 className="text-center font-bold text-5xl mb-8">Tentang</h1>
+        <h1 className="text-center font-bold text-5xl pt-28 mb-16">Tentang</h1>
         <p className="text-center font-semibold text-lg">
           Cemil adalah aplikasi untuk membantu untuk memberikan rekomendasi
           makanan

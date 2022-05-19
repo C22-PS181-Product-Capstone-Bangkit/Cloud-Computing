@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="md:grid-cols-4 grid-cols-2 grid bg-gray-900 pt-5 text-gray-400 min-h-full gap-8">
+    <footer className="md:grid-cols-4 grid-cols-2 grid bg-gray-900 pt-5 text-gray-400 min-h-full gap-8 mt-16">
       <section className="font-semibold">
         <p>Alpha</p>
       </section>
