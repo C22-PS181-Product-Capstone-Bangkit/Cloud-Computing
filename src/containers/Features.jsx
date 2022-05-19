@@ -17,12 +17,6 @@ import {
   Screen4,
   Screen5,
 } from "../assets/img";
-// import Phone from "../assets/img/phone.svg";
-// import Screen1 from "../assets/img/Welcome Screen.svg";
-// import Screen2 from "../assets/img/Search Result.svg";
-// import Screen3 from "../assets/img/Detail Restaurant.svg";
-// import Screen4 from "../assets/img/History.svg";
-// import Screen5 from "../assets/img/Recommend Restaurant.svg";
 
 function Features() {
   const [swiper, setSwiper] = useState({ snapIndex: 1 });
