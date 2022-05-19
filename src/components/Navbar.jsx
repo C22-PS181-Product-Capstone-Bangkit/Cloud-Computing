@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ViewListIcon, XIcon } from "@heroicons/react/solid";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
           <p className="p-2.5 md:p-3">Navigasi</p>
           <div className="md:hidden ml-auto mr-4">
             <button type="button" onClick={() => setOpen(!open)}>
-              {open ? "X" : "Y"}
+              {open ? <XIcon className="w-7 h-7" /> : <ViewListIcon className="w-7 h-7" />}
             </button>
           </div>
         </div>
