@@ -22,12 +22,12 @@ function Features() {
   const [swiper, setSwiper] = useState({ snapIndex: 1 });
   const [count, setCount] = useState(1);
   return (
-    <>
+    <div id="feature" className="lg:mx-16 md:mx-12 mb-16">
       <h1 className="text-center font-bold text-5xl mb-8">Fitur</h1>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-2 grid-cols-1">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-2 grid-cols-1 gap-4">
         <section
           onClick={() => swiper.slideTo(2)}
-          className={` p-8 my-3 mx-4 rounded-xl shadow-md ${
+          className={`lg:row-start-1 md:row-start-3 row-start-3 p-8 my-3 rounded-xl shadow-md ${
             count === 2
               ? "bg-gradient-to-r from-white to-cyan-50"
               : "background-white "
@@ -35,12 +35,12 @@ function Features() {
         >
           <div className="flex items-center">
             <QuestionMarkCircleIcon
-              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-20 w-20 rounded-md ${
-                count === 2 ? "border-black" : "border-gray-200"
+              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
+                count === 2 ? "border-gray-400" : "border-gray-200"
               }`}
             />
             <h1
-              className={`font-bold text-2xl  ${
+              className={`font-bold text-xl  ${
                 count === 2 ? "text-cyan-410" : "text-black"
               }`}
             >
@@ -51,15 +51,7 @@ function Features() {
             Bingung makan apa? Yuk lihat-lihat makanan
           </p>
         </section>
-        <div
-          className="md:row-span-2 md:col-span-2 lg:col-span-1 md:mb-36 h-96 mb-40 mt-5"
-          // style={{
-          //   backgroundImage: `url(${Phone})`,
-          //   backgroundRepeat: "no-repeat",
-          //   backgroundPosition: "center",
-          //   backgroundSize: "100% 94%",
-          // }}
-        >
+        <div className="md:row-span-2 md:col-span-2 lg:col-span-1 md:mb-36 h-96 mb-40 mt-5">
           <img
             src={Phone}
             alt="phone"
@@ -101,7 +93,7 @@ function Features() {
         </div>
         <section
           onClick={() => swiper.slideTo(3)}
-          className={`lg:row-start-2 lg:col-start-1 md:col-start-2 md:row-start-1 row-start-2 p-8 my-3 mx-4 rounded-xl shadow-md ${
+          className={`lg:col-start-1 lg:row-start-2 md:col-start-2 md:row-start-3 row-start-4 p-8 my-3 rounded-xl shadow-md ${
             count === 3
               ? "bg-gradient-to-r from-white to-cyan-50"
               : "background-white "
@@ -109,12 +101,12 @@ function Features() {
         >
           <div className="flex items-center">
             <HeartIcon
-              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-20 w-20 rounded-md ${
-                count === 3 ? "border-black" : "border-gray-200"
+              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
+                count === 3 ? "border-gray-400" : "border-gray-200"
               }`}
             />
             <h1
-              className={`font-bold text-2xl  ${
+              className={`font-bold text-xl  ${
                 count === 3 ? "text-cyan-410" : "text-black"
               }`}
             >
@@ -127,7 +119,7 @@ function Features() {
         </section>
         <section
           onClick={() => swiper.slideTo(4)}
-          className={`p-8 my-3 mx-4 rounded-xl shadow-md ${
+          className={`p-8 my-3 rounded-xl shadow-md lg:col-start-3 lg:row-start-1 md:row-start-4 row-start-5 ${
             count === 4
               ? "bg-gradient-to-r from-white to-cyan-50"
               : "background-white "
@@ -135,12 +127,12 @@ function Features() {
         >
           <div className="flex items-center">
             <StarIcon
-              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-20 w-20 rounded-md ${
-                count === 4 ? "border-black" : "border-gray-200border-gray-200"
+              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
+                count === 4 ? "border-gray-400" : "border-gray-200"
               }`}
             />
             <h1
-              className={`font-bold text-2xl  ${
+              className={`font-bold text-xl  ${
                 count === 4 ? "text-cyan-410" : "text-black"
               }`}
             >
@@ -154,20 +146,20 @@ function Features() {
 
         <section
           onClick={() => swiper.slideTo(5)}
-          className={` p-8 my-3 mx-4 rounded-xl shadow-md ${
+          className={` p-8 my-3 rounded-xl shadow-md lg:col-start-3 lg:row-start-2 md:row-start-4 row-start-6 ${
             count === 5
               ? "bg-gradient-to-r from-white to-cyan-50"
-              : "background-white "
+              : "background-white"
           }`}
         >
           <div className="flex items-center">
             <PencilIcon
-              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-20 w-20 rounded-md ${
-                count === 5 ? "border-black" : "border-gray-200"
+              className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
+                count === 5 ? "border-gray-400" : "border-gray-200"
               }`}
             />
             <h1
-              className={`font-bold text-2xl  ${
+              className={`font-bold text-xl  ${
                 count === 5 ? "text-cyan-410" : "text-black"
               }`}
             >
@@ -179,7 +171,7 @@ function Features() {
           </p>
         </section>
       </div>
-    </>
+    </div>
   );
 }
 
