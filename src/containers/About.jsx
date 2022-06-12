@@ -1,26 +1,31 @@
-import { SparklesIcon, ShieldCheckIcon, CakeIcon } from "@heroicons/react/solid";
+import {
+  SparklesIcon,
+  ClipboardListIcon,
+  ClockIcon,
+} from "@heroicons/react/solid";
 
 const value = [
   {
     icon: (
-      <CakeIcon className="w-24 h-24 mx-auto p-5 border-2 border-cyan-410 rounded-full text-cyan-410" />
+      <ClockIcon className="w-24 h-24 mx-auto p-5 border-2 border-cyan-410 rounded-full text-cyan-410" />
     ),
-    title: "Food",
-    description: "Makanan berbagai pilihan dengan beragam kategori",
+    title: "Time Saving",
+    description: "Just swipe! swipe! and swipe! Pick your restaurant",
   },
   {
     icon: (
       <SparklesIcon className="w-24 h-24 mx-auto p-5 border-2 border-cyan-410 rounded-full text-cyan-410" />
     ),
-    title: "App",
-    description: "Terintegrasi Machine Learning untuk belajar karakteristik pengguna",
+    title: "Ease of choosing restaurant",
+    description:
+      "Using Machine Learning to help give recommendation based on preferences user",
   },
   {
     icon: (
-      <ShieldCheckIcon className="w-24 h-24 mx-auto p-5 border-2 border-cyan-410 rounded-full text-cyan-410" />
+      <ClipboardListIcon className="w-24 h-24 mx-auto p-5 border-2 border-cyan-410 rounded-full text-cyan-410" />
     ),
-    title: "Security",
-    description: "Data pengguna aman dan terlindungi",
+    title: "Review Restaurant",
+    description: "Get to know good restaurants to visit",
   },
 ];
 
@@ -28,10 +33,11 @@ function About() {
   return (
     <div id="about" className="lg:mx-16 md:mx-12 mx-4">
       <article>
-        <h1 className="text-center font-bold text-5xl pt-28 mb-16">Tentang</h1>
-        <p className="text-center font-semibold text-lg">
-          Cemil adalah aplikasi untuk membantu untuk memberikan rekomendasi
-          makanan
+        <h1 className="text-center font-bold text-5xl pt-28 mb-12">About</h1>
+        <p className="text-center font-semibold text-lg lg:w-1/2 mx-auto">
+          Cemil is a restaurant recommendation app which can provide restaurant
+          recommendations to users by learning about their history and
+          preferences.
         </p>
       </article>
       <div className="max-w-4xl mx-auto">

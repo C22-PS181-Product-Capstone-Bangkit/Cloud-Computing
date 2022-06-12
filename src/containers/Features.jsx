@@ -23,7 +23,7 @@ function Features() {
   const [count, setCount] = useState(1);
   return (
     <div id="feature" className="lg:mx-16 md:mx-12 mx-4">
-      <h1 className="text-center font-bold text-5xl pt-28 mb-16">Fitur</h1>
+      <h1 className="text-center font-bold text-5xl pt-28 mb-16">Features</h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:grid-rows-2 grid-cols-1 gap-4">
         <section
           onClick={() => swiper.slideTo(2)}
