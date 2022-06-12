@@ -29,9 +29,19 @@ This is Landing Page represent our product Cemil. Using library React, we making
 **Expected Output**
 
 ```console
-> cemil@0.1.0 start
-> react-scripts start
+Compiled successfully!
 
+You can now view cemil in the browser.
+
+You can now view cemil in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.18.92.241:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
 ```
 
 Open browser and type: http://localhost:3000/

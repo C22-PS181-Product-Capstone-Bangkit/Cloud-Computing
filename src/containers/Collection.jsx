@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { StarIcon } from "@heroicons/react/solid";
 
 function Collection({ restaurant }) {

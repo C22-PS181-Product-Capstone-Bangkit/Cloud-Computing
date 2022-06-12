@@ -33,7 +33,7 @@ function Features() {
               : "background-white "
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center pointer-events-none">
             <QuestionMarkCircleIcon
               className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
                 count === 2 ? "border-gray-400" : "border-gray-200"
@@ -99,7 +99,7 @@ function Features() {
               : "background-white "
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center pointer-events-none">
             <HeartIcon
               className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
                 count === 3 ? "border-gray-400" : "border-gray-200"
@@ -125,7 +125,7 @@ function Features() {
               : "background-white "
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center pointer-events-none">
             <StarIcon
               className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
                 count === 4 ? "border-gray-400" : "border-gray-200"
@@ -152,7 +152,7 @@ function Features() {
               : "background-white"
           }`}
         >
-          <div className="flex items-center">
+          <div className="flex items-center pointer-events-none">
             <PencilIcon
               className={`p-2 mr-4 bg-white border-2 text-cyan-410 h-16 w-16 rounded-md ${
                 count === 5 ? "border-gray-400" : "border-gray-200"

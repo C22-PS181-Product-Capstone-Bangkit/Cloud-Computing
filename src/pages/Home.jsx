@@ -14,7 +14,7 @@ function Home() {
       const data = await RestaurantRepository.fetchRestaurant();
       setRestaurant(data);
     };
-    // fetchData();
+    fetchData();
   }, []);
   return (
     <App
